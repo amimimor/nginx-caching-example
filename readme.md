@@ -10,7 +10,7 @@ docker run --name my-custom-nginx-container --rm -v /tmp/nginx.conf:/etc/nginx/c
 
 ### file serving python server. acts as the nginx backend service to which nginx proxies requests to
 ```sh
-docker run --rm -ti -p 8000:8000 -v /tmp/test:/app --network chaching python:3.9 sh -c cd /app && python3 -m http.server
+docker run --rm -ti -p 8000:8000 -v /tmp/test:/app --network chaching python:3.9 sh -c "cd /app && python3 -m http.server"
 ```
 
 ### test from you localhost
